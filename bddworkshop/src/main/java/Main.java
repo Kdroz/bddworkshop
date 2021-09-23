@@ -3,5 +3,6 @@ public class Main {
         System.out.println("Hello World !!!");
         System.out.println("Hi pull me");
         System.out.println("My second push!");
+        System.out.println("Try the rebase");
     }
 }
