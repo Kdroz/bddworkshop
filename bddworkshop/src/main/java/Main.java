@@ -5,6 +5,7 @@ public class Main {
         System.out.println("My second push!");
         System.out.println("I will try rebase");
         System.out.println("Try the rebase");
+        System.out.println("Try the merging");
         System.out.println("My second merging");
     }
 }
