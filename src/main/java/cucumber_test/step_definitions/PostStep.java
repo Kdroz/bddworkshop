@@ -16,7 +16,6 @@ import java.util.Map;
 
 public class PostStep {
 
-    public static APIClient httpClient;
     public static HttpResponse<String> posts;
     private static int i;
     private final String POST_ID = "id";
@@ -32,15 +31,10 @@ public class PostStep {
         });
     }
 
-    @Given("Call the posts function")
-    public void callSetup(){
-        httpClient = new APIClient();
-    }
-
     @When("I call GET request")
     public void callPosts(){
         try {
-            posts = httpClient.getPosts();
+            posts = APIClient.getInstance().getPosts();
         } catch (IOException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {

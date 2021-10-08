@@ -1,7 +1,7 @@
 Feature: The post has a title and has many comments.
 
   Scenario: Get all the posts
-    Given Call the posts function
+    Given Initiate the contact with the API
     When I call GET request
     Then The following responses are returned
     | id | title |
